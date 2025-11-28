@@ -47,7 +47,7 @@ public class Main {
         if (str == null) {
             return false;
         }
-        final boolean propertyOne = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z0-9]{" + minLength + "}$",
+        final boolean propertyOne = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z0-9]{" + minLength + ",}$",
                 str);
         // as needed, modify this code.
         return propertyOne;
