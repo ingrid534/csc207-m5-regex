@@ -19,14 +19,11 @@ public class MainTest {
         assertFalse(Main.checkForDoubles("replace with correct regex"));
     }
 
-
-
-
     // Tests for checkForPassword
     @Test
     void testPasswordValid() {
         assertTrue(Main.checkForPassword("Abc123", 6));
-        assertTrue(Main.checkForPassword("XyZ9abc", 6));
+        assertTrue(Main.checkForPassword("XyZ9abc", 7));
     }
 
     @Test
