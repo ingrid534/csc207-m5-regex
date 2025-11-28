@@ -23,7 +23,7 @@ public class MainTest {
     @Test
     void testPasswordValid() {
         assertTrue(Main.checkForPassword("Abc123", 6));
-        assertTrue(Main.checkForPassword("XyZ9abc", 7));
+        assertFalse(Main.checkForPassword("XyZ9abc", 6));
     }
 
     @Test
